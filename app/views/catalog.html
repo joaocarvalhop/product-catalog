@@ -1,0 +1,17 @@
+<div>
+  <h2>Lista de Produtos</h2>
+  <input type="text" ng-model="filterText" placeholder="Filtrar produtos...">
+  
+  <label>Ordenar por:</label>
+  <select ng-model="sortType">
+      <option value="title">Nome</option>
+      <option value="price">Preço</option>
+      <option value="category">Categoria</option>
+  </select>
+
+  <ul>
+      <li ng-repeat="product in products | filter:filterText | orderBy:sortType">
+          <a href="#!/item/{{product.id}}">{{product.title}} - {{product.price | currency}}</a>
+      </li>
+  </ul>
+</div>

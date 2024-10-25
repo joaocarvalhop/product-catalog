@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="catalogApp">
+
+<head>
+  <title>Catálogo de Produtos</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div>
+      <h1>Catálogo de Produtos</h1>
+      <a href="#!/catalog">Ver Catálogo</a>
+    </div>
+
+    <div ng-view></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/mainController.js"></script>
+  <script src="app/controllers/itemController.js"></script>
+  <script src="app/services/catalogService.js"></script>
+
+</body>
+
+</html>

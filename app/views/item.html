@@ -1,0 +1,10 @@
+<div ng-if="product">
+  <h2>{{product.title}}</h2>
+  <p>Categoria: {{product.category}}</p>
+  <p>Descrição: {{product.description}}</p>
+  <p>Preço: {{product.price | currency}}</p>
+  <img ng-src="{{product.image}}" alt="{{product.title}}">
+</div>
+<div ng-if="!product">
+  <p>Produto não encontrado.</p>
+</div>
